@@ -60,23 +60,50 @@ namespace PracticalCodingTest
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050005
-			public const int button1 = 2131034117;
-			
-			// aapt resource value: 0x7f050000
-			public const int imageView1 = 2131034112;
-			
 			// aapt resource value: 0x7f050001
-			public const int linearLayout1 = 2131034113;
+			public const int btnBack = 2131034113;
 			
-			// aapt resource value: 0x7f050004
-			public const int lvContacts = 2131034116;
+			// aapt resource value: 0x7f050008
+			public const int btnCreateUser = 2131034120;
 			
-			// aapt resource value: 0x7f050002
-			public const int textViewName = 2131034114;
+			// aapt resource value: 0x7f05000e
+			public const int button1 = 2131034126;
+			
+			// aapt resource value: 0x7f050007
+			public const int etConfirm = 2131034119;
+			
+			// aapt resource value: 0x7f050005
+			public const int etPassword = 2131034117;
 			
 			// aapt resource value: 0x7f050003
-			public const int textViewPwStrength = 2131034115;
+			public const int etUsername = 2131034115;
+			
+			// aapt resource value: 0x7f05000a
+			public const int imageView1 = 2131034122;
+			
+			// aapt resource value: 0x7f050000
+			public const int linearLayout1 = 2131034112;
+			
+			// aapt resource value: 0x7f05000d
+			public const int lvContacts = 2131034125;
+			
+			// aapt resource value: 0x7f05000b
+			public const int textViewName = 2131034123;
+			
+			// aapt resource value: 0x7f05000c
+			public const int textViewPwStrength = 2131034124;
+			
+			// aapt resource value: 0x7f050006
+			public const int tvConfirm = 2131034118;
+			
+			// aapt resource value: 0x7f050009
+			public const int tvErrors = 2131034121;
+			
+			// aapt resource value: 0x7f050004
+			public const int tvPassword = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int tvUsername = 2131034114;
 			
 			static Id()
 			{
@@ -92,10 +119,13 @@ namespace PracticalCodingTest
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int list_item = 2130903040;
+			public const int create_user = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int list_item = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Main = 2130903042;
 			
 			static Layout()
 			{

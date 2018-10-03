@@ -1,10 +1,13 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.Widget;
 using Android.Views;
 using Android.OS;
 using System.Collections.Generic;
+using Android.Content;
 using PracticalCodingTest.Models;
 using PracticalCodingTest.Adapters;
+using PracticalCodingTest.Services;
 
 namespace PracticalCodingTest
 {
@@ -19,19 +22,20 @@ namespace PracticalCodingTest
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
             listView = FindViewById<ListView>(Resource.Id.lvContacts);
-
-            for (int i = 1; i < 20; i++)
-            {
-
-                users.Add(new User
-                {
-                    UserName = "Forrest",
-                    PasswordHash = "90"
-                });
-            }
-
+            UserDataService userDataService = new UserDataService();
+            users = UserDataService.GetInstance().Users;
             listView.Adapter = new UserAdapter(this, users);
         }
+
+        [Java.Interop.Export("NavigateCreateUser")]
+        public void NavigateCreateUser(View view)
+        {
+            Intent intent = new Intent(this, typeof(CreateUserActivity));
+
+            StartActivity(intent);
+
+        }
+
     }
 }
 
