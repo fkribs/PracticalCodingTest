@@ -99,8 +99,8 @@ namespace PracticalCodingTest
             {
                 if (UserDataService.GetInstance().AddUser(username, password))
                     this.Finish();
-                tvErrors.Text = UserTakenError;
-
+                else
+                    tvErrors.Text = UserTakenError;
             }
         }
 

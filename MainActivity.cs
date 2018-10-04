@@ -22,7 +22,6 @@ namespace PracticalCodingTest
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
             listView = FindViewById<ListView>(Resource.Id.lvContacts);
-            UserDataService userDataService = new UserDataService();
             users = UserDataService.GetInstance().Users;
             listView.Adapter = new UserAdapter(this, users);
         }
@@ -34,6 +33,13 @@ namespace PracticalCodingTest
 
             StartActivity(intent);
 
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+            users = UserDataService.GetInstance().Users;
+            listView.Adapter = new UserAdapter(this, users);
         }
 
     }

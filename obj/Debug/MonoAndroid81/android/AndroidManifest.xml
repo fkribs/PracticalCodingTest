@@ -3,7 +3,8 @@
   <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="27" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="PracticalCodingTest" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
+  <application android:label="PracticalCodingTest" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="CreateUserActivity" android:name="md5b4fdfd519b224abaf4cdc66eb451ef31.CreateUserActivity" />
     <activity android:icon="@drawable/icon" android:label="PracticalCodingTest" android:name="md5b4fdfd519b224abaf4cdc66eb451ef31.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

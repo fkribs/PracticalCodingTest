@@ -44,6 +44,7 @@ namespace PracticalCodingTest.Adapters
                 view = context.LayoutInflater.Inflate(Resource.Layout.list_item, null);
             }
             view.FindViewById<TextView>(Resource.Id.textViewName).Text = user.UserName;
+            view.FindViewById<TextView>(Resource.Id.textViewPassword).Text = user.Password;
             //view.FindViewById<TextView>(Resource.Id.textViewName).Text = user.UserName;
             Random rnd = new Random();
             Android.Graphics.Color color = Android.Graphics.Color.Rgb(rnd.Next(256),rnd.Next(256), rnd.Next(256));

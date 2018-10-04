@@ -91,7 +91,7 @@ namespace PracticalCodingTest
 			public const int textViewName = 2131034123;
 			
 			// aapt resource value: 0x7f05000c
-			public const int textViewPwStrength = 2131034124;
+			public const int textViewPassword = 2131034124;
 			
 			// aapt resource value: 0x7f050006
 			public const int tvConfirm = 2131034118;
