@@ -24,6 +24,10 @@ namespace PracticalCodingTest
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -74,7 +78,7 @@ namespace PracticalCodingTest
 			public const int textViewName = 2130837523;
 			
 			// aapt resource value: 0x7F020014
-			public const int textViewPwStrength = 2130837524;
+			public const int textViewPassword = 2130837524;
 			
 			// aapt resource value: 0x7F020008
 			public const int tvConfirm = 2130837512;

@@ -24,7 +24,7 @@ public final class R {
         public static final int linearLayout1=0x7f050000;
         public static final int lvContacts=0x7f05000d;
         public static final int textViewName=0x7f05000b;
-        public static final int textViewPwStrength=0x7f05000c;
+        public static final int textViewPassword=0x7f05000c;
         public static final int tvConfirm=0x7f050006;
         public static final int tvErrors=0x7f050009;
         public static final int tvPassword=0x7f050004;

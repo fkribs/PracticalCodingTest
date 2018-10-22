@@ -16,6 +16,8 @@ namespace PracticalCodingTest
     {
         List<User> users = new List<User>();
         ListView listView;
+        private Button btnNewUser;
+        private const string NewUserPrompt = "New User";
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -24,6 +26,9 @@ namespace PracticalCodingTest
             listView = FindViewById<ListView>(Resource.Id.lvContacts);
             users = UserDataService.GetInstance().Users;
             listView.Adapter = new UserAdapter(this, users);
+            btnNewUser = FindViewById<Button>(Resource.Id.button1);
+            btnNewUser.Text = NewUserPrompt;
+
         }
 
         [Java.Interop.Export("NavigateCreateUser")]

@@ -9,7 +9,7 @@ int id imageView1 0x7f05000a
 int id linearLayout1 0x7f050000
 int id lvContacts 0x7f05000d
 int id textViewName 0x7f05000b
-int id textViewPwStrength 0x7f05000c
+int id textViewPassword 0x7f05000c
 int id tvConfirm 0x7f050006
 int id tvErrors 0x7f050009
 int id tvPassword 0x7f050004
